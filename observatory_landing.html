@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PHRONOS | Observatory Landing</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400&family=Fira+Code:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="observatory_style.css">
+</head>
+<body>
+
+    <div class="grid-bg"></div>
+
+    <!-- 1. Navigation -->
+    <nav>
+        <a href="index.html" class="brand-group">
+            <div style="width:16px; height:16px; border:2px solid #1A1A1A; border-radius:50%; display:grid; place-items:center;">
+                <div style="width:4px; height:4px; background:#B08D55; border-radius:50%;"></div>
+            </div>
+            PHRONOS
+        </a>
+        <div class="nav-items">
+            <a href="#" class="active">Observatory</a>
+            <a href="#">Instruments</a>
+            <a href="#">Telemetry</a>
+        </div>
+    </nav>
+
+    <!-- 2. Control Ribbon -->
+    <div class="control-ribbon">
+        <span>Signal Filter:</span>
+        <div class="filter-group" id="filter-group">
+            <button class="filter-btn active" data-filter="all">All Sectors</button>
+            <button class="filter-btn" data-filter="high-risk">High Risk Only</button>
+            <button class="filter-btn" data-filter="active">Active Monitoring</button>
+        </div>
+        <div class="readout">
+            <span class="live-indicator">●</span> SYSTEM ONLINE | 14 ACTIVE TOPICS
+        </div>
+    </div>
+
+    <!-- 3. Main Content -->
+    <main id="main-content">
+
+        <!-- SECTOR I -->
+        <div class="sector-group">
+            <div class="sector-header">
+                <span class="sector-id">SECTOR I.</span>
+                <span class="sector-title">Epistemology & Consensus</span>
+            </div>
+
+            <div class="topic-grid">
+                
+                <!-- Card 1 (Links to the Child Topic) -->
+                <a href="observatory_topic.html" class="topic-card filter-high-risk filter-active">
+                    <div class="card-header">
+                        <span class="card-id">TOP-092</span>
+                        <div class="status-badge risk-high">
+                            <div class="status-dot"></div>
+                            <span>ACTIVE</span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Algorithmic Consensus Breakdown</h3>
+                        <p class="card-desc">
+                            Investigating the failure modes of high-velocity social feeds and the resulting fragmentation of shared ontological frameworks.
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <span>LANDSCAPE -> THEORY -> METHOD</span>
+                        <span class="risk-label">RISK: CRITICAL</span>
+                    </div>
+                </a>
+
+                <!-- Card 2 -->
+                <a href="#" class="topic-card filter-active">
+                    <div class="card-header">
+                        <span class="card-id">TOP-094</span>
+                        <div class="status-badge risk-med">
+                            <div class="status-dot"></div>
+                            <span>STABLE</span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Memetic Drift Velocity</h3>
+                        <p class="card-desc">
+                            Measuring the speed at which semantic meaning detaches from original signifiers in closed-loop community nodes.
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <span>LANDSCAPE -> THEORY</span>
+                        <span class="risk-label">RISK: MODERATE</span>
+                    </div>
+                </a>
+
+                <!-- Card 3 -->
+                <a href="#" class="topic-card">
+                    <div class="card-header">
+                        <span class="card-id">TOP-101</span>
+                        <div class="status-badge risk-low">
+                            <div class="status-dot"></div>
+                            <span>ARCHIVED</span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Narrative Collapse Event A4</h3>
+                        <p class="card-desc">
+                            Post-mortem analysis of the 2024 "Blue Sky" narrative collapse event. Full dataset available.
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <span>RESULTS ONLY</span>
+                        <span class="risk-label">RISK: LOW</span>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+
+        <!-- SECTOR II -->
+        <div class="sector-group">
+            <div class="sector-header">
+                <span class="sector-id">SECTOR II.</span>
+                <span class="sector-title">Synthetic Governance</span>
+            </div>
+
+            <div class="topic-grid">
+
+                <!-- Card 4 -->
+                <a href="#" class="topic-card filter-high-risk filter-active">
+                    <div class="card-header">
+                        <span class="card-id">TOP-055</span>
+                        <div class="status-badge risk-high">
+                            <div class="status-dot"></div>
+                            <span>ACTIVE</span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Agent Rights Framework</h3>
+                        <p class="card-desc">
+                            Developing legal and ethical ontologies for autonomous agents operating with financial agency on distributed ledgers.
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <span>LANDSCAPE -> THEORY -> METHOD</span>
+                        <span class="risk-label">RISK: HIGH</span>
+                    </div>
+                </a>
+
+                <!-- Card 5 -->
+                <a href="#" class="topic-card">
+                    <div class="card-header">
+                        <span class="card-id">TOP-061</span>
+                        <div class="status-badge risk-med">
+                            <div class="status-dot"></div>
+                            <span>CALIBRATING</span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Recursive Justice Models</h3>
+                        <p class="card-desc">
+                            Can automated arbitration systems reduce bias in small-claims disputes? Initial theory generation phase.
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <span>LANDSCAPE -> THEORY</span>
+                        <span class="risk-label">RISK: UNKNOWN</span>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+
+    </main>
+
+    <script src="observatory_script.js"></script>
+</body>
+</html>
